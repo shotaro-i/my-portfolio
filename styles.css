@@ -1,6 +1,83 @@
-/*  */
 
-/* Projects section */
+
+/* universal  */
+
+body {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+}
+
+li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* About page */
+.representative-projects {
+  padding: 0;
+
+}
+.representative-projects a {
+  /* text-decoration: none; */
+  color: #000;
+}
+.representative-projects li {
+}
+
+.hidden-project {
+  display: none;
+}
+.hidden-project img {
+  max-width: 400px;
+}
+/* Skills icons */
+.skills-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.skills-icons img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+/* Contact page  */
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* Projects page */
 
 /* Projects Grid */
 #project-list {
@@ -62,4 +139,3 @@
     border-radius: 10px;
   }
 }
-
