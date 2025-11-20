@@ -1,4 +1,4 @@
-// representative-projectsのliクリックで直後の.hidden-projectをトグル
+// Toggle the adjacent .hidden-project when a representative-projects li is clicked
 document.addEventListener("DOMContentLoaded", () => {
   const repLis = document.querySelectorAll(".representative-projects li");
   repLis.forEach((li) => {
@@ -13,49 +13,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// プロジェクト情報のJSONリスト
+// JSON list of project information
 const projects = [
   {
     title: "Project 1",
     description: "description",
     image: "./images/photo-1543852786-1cf6624b9987.jpeg", // 必要なら画像パス
-    link: "a", // 必要なら詳細ページ
+    link: "a", // details page link if available
   },
   {
     title: "Project 2",
     description: "description",
-    image: "./images/photo-1548802673-380ab8ebc7b7.jpeg", // 必要なら画像パス
-    link: "a", // 必要なら詳細ページ
+    image: "./images/photo-1548802673-380ab8ebc7b7.jpeg", // image path if needed
+    link: "a", // details page link if available
   },
   {
     title: "Project 3",
     description: "description",
-    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // 必要なら画像パス
-    link: "a", // 必要なら詳細ページ
+    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // image path if needed
+    link: "a", // details page link if available
   },
   {
     title: "Project 4",
     description: "description",
-    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // 必要なら画像パス
-    link: "", // 必要なら詳細ページ
+    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // image path if needed
+    link: "", // details page link if available
   },
   {
     title: "Project 5",
     description: "description",
-    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // 必要なら画像パス
-    link: "", // 必要なら詳細ページ
+    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // image path if needed
+    link: "", // details page link if available
   },
   {
     title: "Project 6",
     description: "description",
-    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // 必要なら画像パス
-    link: "", // 必要なら詳細ページ
+    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // image path if needed
+    link: "", // details page link if available
   },
   {
     title: "Project 7",
     description: "description",
-    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // 必要なら画像パス
-    link: "", // 必要なら詳細ページ
+    image: "./images/photo-1560114928-40f1f1eb26a0.jpeg", // image path if needed
+    link: "", // details page link if available
   },
   {
     title: "Project 8",
@@ -77,7 +77,7 @@ const projects = [
   },
 ];
 
-// プロジェクトをHTMLに展開（画像・タイトル・説明・リンク付きグリッド）
+// Render projects to HTML (grid with image, title, description and optional link)
 const projectList = document.getElementById("project-list");
 if (projectList) {
   projects.forEach((project) => {
